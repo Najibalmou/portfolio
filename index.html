@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najib_Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="portfo.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .bubbles{
+            position: relative;
+            display: flex;
+        }
+        .bubbles span{
+            position: relative;
+            width: 6px;
+            height: 6px;
+            background: #e3ebed;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #e3ebed, 0 0 100px #e3ebed;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(125s/ var(--i));
+        }
+        .bubbles span:nth-child(even){
+            background: #4fc3dc;
+            box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+        }
+        @keyframes animate {
+            0%
+            {
+                transform: translateY(100vh);
+            }
+            100%
+            {
+                transform: translateY(0vh);
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <header class="header">
+        <img src="burgermenu.jpg" alt="burger_menu" width="60px" class="toggle-navbar-btn" id="iconburg">
+        <a href="#" class="logo">Najib.</a>
+
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+           </div>
+        <nav class="navbar" id="navbaar">
+            <a href="index.html" class="active" >Home</a>
+            <a href="#sec2">About</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Najib Almoubaraki</h1>
+            <h3>Front-end Developer</h3>
+           <p> Front-end developer skilled in HTML, CSS, and JavaScript. I bring concepts to life with precision and focus on creating visually appealing and user-friendly interfaces. Committed to staying current with industry trends for effective digital solutions.</p>
+           <div class="btn-box">
+            <a href="CV-Najib.pdf" download="Najib-CV"> Download CV </a>
+            <a href="https://wa.me/0601978547" target="_blank" >Let's Talk</a>
+           </div>
+           
+        </div>
+<img src="undraw_static_assets_rpm6.svg" class="image">
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+        </div>
+    </section>
+
+    <section class="sec2" id="sec2">
+        <div class="div2">
+           <center><h1 class="about">About Me</h1></center>
+        </div>
+    </section>
+
+    <script src="mian.js"></script>
+</body>
+</html>
