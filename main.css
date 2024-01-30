@@ -204,7 +204,7 @@ body{
     .home {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 170px;
+        margin-top: 200px;
     }
 
     .image {
@@ -276,11 +276,11 @@ body{
     .image {
         padding-left: 0;
         width: 80%;
-        padding-top: 75px;
+        padding-top: 105px;
         margin-right: 0;
     }
     .home-sci {
-        margin-bottom: 1px;
+        margin-top: 20px;
     }
     .show-navbar .navbar {
         display: flex; 
