@@ -276,11 +276,11 @@ body{
     .image {
         padding-left: 0;
         width: 80%;
-        padding-top: 175px;
+        padding-top: 185px;
         margin-right: 0;
     }
     .home-sci {
-        margin-top: 75px;
+        margin-top: 85px;
     }
     .show-navbar .navbar {
         display: flex; 
