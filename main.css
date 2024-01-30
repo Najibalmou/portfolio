@@ -204,7 +204,7 @@ body{
     .home {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 200px;
+        margin-top: 170px;
     }
 
     .image {
@@ -280,7 +280,7 @@ body{
         margin-right: 0;
     }
     .home-sci {
-        margin-bottom: 130px;
+        margin-bottom: 1px;
     }
     .show-navbar .navbar {
         display: flex; 
