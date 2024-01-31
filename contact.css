@@ -86,6 +86,11 @@ body{
     box-shadow: none;
 }
 
+::selection {
+    background-color: #00abf0;
+    color: #fff;
+}
+
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
