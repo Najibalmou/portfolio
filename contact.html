@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background: #e3ebed;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #e3ebed, 0 0 100px #e3ebed;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #4fc3dc;
+    box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh);
+    }
+    100%
+    {
+        transform: translateY(0vh);
+    }
+}
+    </style>
 </head>
 <body>
     <header class="header">
@@ -21,6 +52,44 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+       </div>
 <br><br><br><br><br>
     <section class="home">
         <center>
