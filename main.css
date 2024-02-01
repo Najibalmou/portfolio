@@ -266,6 +266,7 @@ body{
     transform: scale(1.04);
 }
 .sec4{
+    display: block;
     margin-left: 110px;
 }
 .showCertificate{
@@ -345,6 +346,16 @@ div.gallery {
 .Projects{
     margin-bottom: 20px;
 }
+.skills{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+} 
+.footer{
+    display: inline-block;
+    width: 100%;
+}
 
 .circlepic{
     width: 130px;
@@ -355,13 +366,127 @@ div.gallery {
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.skilllllls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.skillsss{
+    margin: 20px 20px;
+    border: 1px solid #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+    border-radius: 40%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.skillsss:hover{
+    transform: scale(1.05);
+}
+.skills{
+    color: #fff;
+}
+.skillsss img{
+    text-align: center;
+}
+.skillll{
+    margin: 0 60px;
+    box-shadow: 0 0 10px #00abf0;
+    border-radius: 30px;
+}
+.showSkills{
+    background: #00abf0;
+    color: #fff;
+    width: 150px;
+    padding: 7px;
+    border: 1px solid #00abf0;
+    border-radius: 10px;
+    display: none;
+}
 
+.codingpic{
+    display: none;
+}
 
-
+.sec5{
+    display: none;
+}
+.certttimg{
+    display: none;
+}
+.lasttext{
+    text-align: center;
+    font-weight: 500;
+    padding: 6px;
+}
+.foote{
+    background: #044c69;
+}
 
   /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
+    .skillsss{
+        width: 80px;
+    }
+    .certttimg{
+        display: block;
+    }
+    .sec5{
+        display: none;
+        margin-left: 10px;
+    }
+    .codingpic{
+        display: block;
+    }
+    .showSkills{
+        display: block;
+    }
+    .sec4{
+        display: none;
+    }
+
+
+    div.skil {
+        margin-right: 10px;
+        border: 1px solid #00abf0;
+        border-radius: 10px;
+        float: left;
+        width: 180px;
+        margin-top: 20px;
+        transition: 0.4s;
+      }
+      
+      div.skil:hover {
+        border: 1px solid #00abf0;
+        box-shadow: 0 0 10px #00abf0;
+        transform: scale(1.04);
+      }
+      
+      div.skil img {
+        width: 100%;
+        height: auto;
+      }
+
+      .logo{
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .skillsss {
+        width: calc(50% - 40px); 
+    }
+    .skilllllls{
+        display: inline-block;
+        display: none;
+    }
+    .skillsss img{
+        width: 70px;
+    }
     .header {
         flex-direction: column;
         align-items: center;
