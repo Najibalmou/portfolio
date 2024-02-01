@@ -6,5 +6,9 @@ $(document).ready(function(){
     $("#showCertificate").click(function(){
         $("#TheCertificates").toggle();
     });
+
+    $("#showSkills").click(function(){
+        $("#sec5").toggle();
+    });
 });
 
