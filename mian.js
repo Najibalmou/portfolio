@@ -23,4 +23,13 @@ $(document).ready(function(){
         }
     });
 });
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+$(document).ready(function(){
+    $(".contactme").click(function(){
+        $("#success-message").text("Message sent successfully !");
+    });
+});
 
