@@ -41,7 +41,7 @@
 
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
    
     <header class="header">
         <img src="burgermenu.jpg" alt="burger_menu" width="60px" class="toggle-navbar-btn" id="iconburg">
@@ -85,10 +85,10 @@
             <span style="--i:18;"></span>
            </div>
         <nav class="navbar" id="navbaar">
-            <a href="index.html" class="active" >Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="#sec2">About</a>
-            <a href="#">Education</a>
-            <a href="#">Skills</a>
+            <a href="#TheCertificates">Education</a>
+            <a href="#sec6">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -210,7 +210,7 @@
     
     </center>
     <center>
-<h1 class="skills">Skills</h1><br>
+<h1 class="skills" id="skills">Skills</h1><br>
 <img src="codingsb.svg" alt="skills-img" width="150px" class="certttimg">
 <br>
     <button id="showSkills" class="showSkills"><span id="showethide">Show Skills </span><i class='bx bx-log-in-circle' style='color:#fff'></i></button></center>
@@ -218,7 +218,7 @@
 
   <!-- pour les autres appareils -->
 
-  <div class="sec6">
+  <div class="sec6" id="sec6">
     <section class="sec5" id="sec5">
     <center>
     <div class="skil">
@@ -283,6 +283,26 @@
 
   </center>
     
+<br><br><br>
+<center>
+<h1 class="dm">Contact Me</h1><br>
+
+<div class="sec7">
+<div class="imagee"><img src="mail.svg" alt="msg" width="250px">
+</div>
+
+<div class="container">
+  <input type="text" placeholder="&nbsp;&nbsp;Name" class="inp"><br>
+  <input type="text" placeholder="&nbsp;&nbsp;E-mail" class="inp"><br>
+  <input type="text" placeholder="&nbsp;&nbsp;Message Me" class="inpu"><br>
+  <button class="contactme">Send Message</button>
+</div>
+
+</div>
+<br>
+<div id="success-message" class="success-message"></div>
+
+</center>
    
     
 <br><br>
