@@ -395,7 +395,6 @@ div.gallery {
 }
 .skillll{
     margin: 0 60px;
-    box-shadow: 0 0 10px #00abf0;
     border-radius: 30px;
 }
 .showSkills{
@@ -426,12 +425,88 @@ div.gallery {
 .foote{
     background: #044c69;
 }
+img {
+    pointer-events: none; /* Désactive les événements de souris sur les images */
+    position: relative; /* Assurez-vous que les superpositions fonctionnent correctement */
+}
+
+.sec7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec7{
+    border: 2px solid #00abf0;
+    width: 990px;
+    padding: 30px;
+    box-shadow: 0 0 10px #00abf0;
+    border-radius: 20px;
+}
+.sec7 div {
+    margin-right: 20px;
+}
+.contactme{
+    background: #00abf0;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #081b29;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+}
+.contactme:hover{
+    background: #fff;
+    color: #00abf0;
+}
+.imagee{
+    padding-right: 230px;
+    padding-left: 50px;
+    filter: drop-shadow(8px 5px 5px #1c82aa);
+}
+.inp{
+    width: 400px;
+    padding-top: 10px;
+    color: #044c69;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #081b29;
+    margin-top: 7px;
+}
+.inpu{
+    width: 400px;
+    padding-top: 10px;
+    color: #044c69;
+    font-weight: 600;
+    background: #fff;
+    padding-bottom: 70px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #081b29;
+}
+.inp:focus {
+    box-shadow: 0 0 50px #00abf0;
+}
+.inpu:focus {
+    box-shadow: 0 0 50px #3bc8ff;
+}
+.success-message{
+    color: #00abf0;
+    font-weight: 600;
+}
+
 
   /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     .skillsss{
         width: 80px;
+    }
+    .dm{
+        display: none;
     }
     .certttimg{
         display: block;
@@ -453,11 +528,15 @@ div.gallery {
         margin-top: 30px;
     }
 
+    .sec7{
+        display: none;
+    }
+
     .sec5{
         margin-left: 65px;
         justify-content: center;
     }
-
+    
     div.skil {
         margin-right: 20px;
         border: 1px solid #00abf0;
