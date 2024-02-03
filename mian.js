@@ -29,7 +29,34 @@ document.addEventListener('contextmenu', function(event) {
 
 $(document).ready(function(){
     $(".contactme").click(function(){
-        $("#success-message").text("Message sent successfully !");
+        // Vérifie si tous les champs d'entrée sont vides
+        var inputsAreEmpty = true;
+        $("input").each(function() {
+            if ($(this).val() !== "") {
+                inputsAreEmpty = false;
+                return false;
+            }
+        });
+
+        if (inputsAreEmpty) {
+            $("#success-message").text("Enter your Informations !");
+        } else {
+            
+            $("#success-message").text(""); 
+            $("input").val("");
+
+            setTimeout(function() {
+                $("#success-message").text("Message sent Successfully !");
+            }, 1500);
+        }
     });
 });
 
+
+var cursor = document.getElementById('cursor');
+document.addEventListener('mousemove' , function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+})
