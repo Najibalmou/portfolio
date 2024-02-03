@@ -67,7 +67,7 @@ body{
 
 .home-content p {
     font-size: 16px;
-    margin: 20px 0 40px;
+    margin: 1px 0 20px;
 }
 .home-content .btn-box {
     display: flex;
@@ -491,12 +491,30 @@ img {
     box-shadow: 0 0 50px #00abf0;
 }
 .inpu:focus {
-    box-shadow: 0 0 50px #3bc8ff;
+    box-shadow: 0 0 50px #3bc8ff
 }
 .success-message{
     color: #00abf0;
     font-weight: 600;
 }
+body {
+    overflow-x: hidden;
+}
+
+#cursor{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00abf0;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+
 
 
   /* Media Query for Small Screens */
@@ -506,6 +524,9 @@ img {
         width: 80px;
     }
     .dm{
+        display: none;
+    }
+    #cursor{
         display: none;
     }
     .certttimg{
