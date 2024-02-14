@@ -93,6 +93,7 @@ body{
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    margin-right: 10px;
 }
 
 .btn-box a:hover {
@@ -188,7 +189,6 @@ body{
     display: block;
     margin-left: 0px;
     transition: 0.5s;
-    
 }
 .a:hover::after{
     width: 100%;
@@ -430,7 +430,6 @@ div.gallery {
     width: 100%;
 }
 img {
-     /* Désactive les événements de souris sur les images */
     position: relative; /* Assurez-vous que les superpositions fonctionnent correctement */
 }
 
@@ -554,6 +553,47 @@ body {
 .myname{
     filter: drop-shadow(0 0 3px #309cc6);
 }
+#hiddenName{
+    display: none;
+}
+#hiddentext1{
+    display: none;
+}
+#hiddentext2{
+    display: none;
+}
+#hiddenBtns{
+    display: none;
+}
+#hiddenicons{
+    display: none;
+}
+#hiddenImg{
+    display: none;
+}
+#aboutme{
+    display: none;
+}
+#txt1{
+    display: none;
+}
+#txt2{
+    display: none;
+}
+#txt3{
+    display: none;
+}
+#txt4{
+    display: none;
+}
+#txt5{
+    display: none;
+}
+
+
+
+
+
 
   /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
@@ -567,6 +607,48 @@ body {
         width: 100%;
         padding-top: 20px;
     }
+    #hiddenName{
+        display: block;
+    }
+    #hiddentext1{
+        display: block;
+    }
+    #hiddentext2{
+        display: block;
+    }
+    #hiddenBtns{
+        display: block;
+    }
+    #hiddenicons{
+        display: block;
+    }
+    #hiddenImg{
+        display: block;
+    }
+    #aboutme{
+        display: block;
+    }
+    #txt1{
+        display: block;
+    }
+    #txt2{
+        display: block;
+    }
+    #txt3{
+        display: block;
+    }
+    #txt4{
+        display: block;
+    }
+    #txt5{
+        display: block;
+    }
+    
+
+
+
+
+
     .dm{
         display: none;
     }
@@ -703,6 +785,13 @@ body {
     .show-navbar .navbar {
         display: flex; 
     }
+
+    .home-sci a {
+        margin: 0 auto;
+    }
+    
+
+
     .sec3 {
         flex-direction: column; /* Empile les éléments les uns sur les autres */
         align-items: center; /* Centre les éléments horizontalement */
