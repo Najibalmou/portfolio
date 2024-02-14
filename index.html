@@ -48,6 +48,17 @@
 
 <div id="cursor"></div>
 
+<!-- <center>
+  <div class="cook">
+    <div><img src="cookie.png" alt="cookies" width="70px"></div>
+    <h5>Cookies Constent</h5>
+    <p class="texxxt">This webiste use cookies to ensure you get the best experience on our Webiste</p>
+    <div class="Buttons">
+      <button class="understand">I understand</button>
+    <a href="#" class="more">Learn more</a>
+    </div>
+  </div></center> -->
+
     <header class="header">
         <img src="burgermenu.jpg" alt="burger_menu" width="60px" class="toggle-navbar-btn" id="iconburg">
         <a href="#" class="logo">Najib.</a>
@@ -92,7 +103,7 @@
         <nav class="navbar" id="navbaar">
             <a href="index.html" class="active">Home</a>
             <a href="#sec2">About</a>
-            <a href="#TheCertificates">Education</a>
+            <a href="education.html">Education</a>
             <a href="#sec6">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -107,15 +118,17 @@
             <a href="CV-Najib.pdf" download="Najib-CV"> Download CV </a>
             <a href="https://wa.me/0601978547" target="_blank" >Let's Talk</a>
            </div>
-           
+           <div class="home-sci">
+            <div class="centred-icons">
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
         </div>
         
 <img src="undraw_static_assets_rpm6.svg" class="image">
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-        </div>
+
     </section>
 
     <section class="sec2" id="sec2">
@@ -291,17 +304,23 @@
     
 <br><br><br>
 <center>
-<h1 class="dm">Contact Me</h1><br>
+  <!-- for computer -->
+  <div>
+    <h1 class="dm">Contact Me</h1>
+  </div>
+<br>
 
 <div class="sec7">
 <div class="imagee"><img src="mail.svg" alt="msg" width="250px">
 </div>
 
 <div class="container">
-  <input type="text" placeholder="&nbsp;&nbsp;Name" class="inp"><br>
-  <input type="text" placeholder="&nbsp;&nbsp;E-mail" class="inp"><br>
-  <input type="text" placeholder="&nbsp;&nbsp;Message Me" class="inpu"><br>
+  <form action="form.php" method="post">
+  <input type="text" placeholder="&nbsp;&nbsp;Name" class="inp" required><br>
+  <input type="email" placeholder="&nbsp;&nbsp;E-mail" class="inp" required><br>
+  <input type="text" placeholder="&nbsp;&nbsp;Message Me" class="inpu" required><br>
   <button class="contactme">Send Message</button>
+</form>
 </div>
 
 </div>
@@ -309,7 +328,23 @@
 <div id="success-message" class="success-message"></div>
 
 </center>
-   
+
+<!-- for mobile -->
+   <center>
+<section class="sec8">
+  <div>
+    <h1 class="cntct1">Contact Me</h1>
+    <div>
+  <input type="text" placeholder="&nbsp;&nbsp;Name" class="inp"><br>
+  <input type="text" placeholder="&nbsp;&nbsp;E-mail" class="inp"><br>
+  <input type="text" placeholder="&nbsp;&nbsp;Message Me" class="inpu"><br>
+  <button class="contactme">Send Message</button>
+</div>
+</div>
+  </div>
+</section></center>
+
+
     
 <br><br>
 <footer class="footer">
@@ -319,6 +354,25 @@
 </footer>
     
 
+
+
+<script>
+  // const cookieBox = document.querySelector(".cook");
+  // acceptBtn = cookieBox.querySelector(".Buttons button")
+
+  // acceptBtn.onclick = ()=>{
+  //   document.cookie = "cookies by =Najib_portfolio, max-age="+60*610*24*30;
+  //   if(document.cookie){
+  //     cookieBox.classList.add("hide");
+  //   }else{
+  //       alert("Cookie can't be set !")
+  //   }
+  // }
+  // let checkCookie = document.cookie.indexOf("cookies by =Najib_portfolio");
+
+  // checkCookie != 1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");
+
+</script>
     <script src="mian.js"></script>
 </body>
 </html>
