@@ -35,6 +35,35 @@ body{
     font-weight: 500;
     margin-left: 35px;
 }
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background: #e3ebed;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #e3ebed, 0 0 100px #e3ebed;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #4fc3dc;
+    box-shadow: 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+}
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh);
+    }
+    100%
+    {
+        transform: translateY(0vh);
+    }
+}
 .navbar a:hover,
 .navbar a.active{
     color: #00abf0;
@@ -62,7 +91,7 @@ body{
     height: 100%;
     background: #081b29;
     border: 2px solid #00abf0;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 19px;
     color: #00abf0;
     text-decoration: none;
@@ -72,8 +101,8 @@ body{
     overflow: hidden;
     transition: .5s;
     margin: 10px;
-    box-shadow: 0 0 10px #00abf0;
 }
+
 .home{
     margin-top: 100px;
 }
@@ -82,8 +111,15 @@ body{
 }
 .btn-box a:hover {
     color: #081b29;
-    background: #00abf0;
-    box-shadow: none;
+    box-shadow: 0 0 10px #00abf0;
+    background: #60ace3;
+}
+.home-sci a {
+    width: 50px;
+    height: 50px;
+}
+body {
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -97,7 +133,7 @@ body{
     .header {
         flex-direction: column;
         align-items: center;
-        background: #081b29;
+        background: linear-gradient(#00abf0,#081b29);
     }
     .logo {
         margin-bottom: 15px; 
