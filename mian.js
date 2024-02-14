@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#iconburg").click(function(){
         $("#navbaar").toggle();
+        $(".home-sci").toggleClass("padding-top-150");
     });
 
     $("#showCertificate").click(function(){
@@ -23,9 +24,14 @@ $(document).ready(function(){
         }
     });
 });
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
+
+
+function zidmargin(){
+    document.querySelector('home-sci');
+    document.addEventListener()
+}
+
+
 
 $(document).ready(function(){
     $(".contactme").click(function(){
