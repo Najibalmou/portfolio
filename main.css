@@ -205,7 +205,7 @@ body{
     .home {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 160px;
+        margin-top: 230px;
     }
 
     .image {
