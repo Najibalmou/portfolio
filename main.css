@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 50;
     background: #081b29;
 }
 .logo{
@@ -205,7 +205,7 @@ body{
     .home {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 1px;
+        margin-top: 100px;
     }
 
     .image {
@@ -730,8 +730,8 @@ body {
         flex-direction: column;
         align-items: center;
         background: linear-gradient(#00abf0,#081b29);
-        position: relative;
-        z-index: 1;
+        position: fixed;
+        z-index: 50;
     }
     .skill {
         width: 500px;
@@ -769,6 +769,10 @@ body {
         padding-top: 30px;
         padding-bottom: 10px;
         margin-right: 0;
+    }
+    body{
+        position: relative;
+        width: 100%;
     }
     .home-sci {
        margin: 0 auto;
