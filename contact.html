@@ -43,12 +43,12 @@
 <body>
     <header class="header">
         <img src="burgermenu.jpg" alt="burger_menu" width="60px" class="toggle-navbar-btn" id="iconburg">
-        <a href="#" class="logo">Najib.</a>
+        <img src="sun.png" id="icon">
 
         <nav class="navbar" id="navbaar">
             <a href="index.html" class="active" >Home</a>
             <a href="#sec2">About</a>
-            <a href="#">Education</a>
+            <a href="education.html">Education</a>
             <a href="#">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -111,5 +111,28 @@
     </section>
 
     <script src="mian.js"></script>
+
+
+
+    <script>
+        var icon = document.getElementById("icon");
+        var burg = document.getElementById("iconburg");
+  
+        icon.onclick = function(){
+          document.body.classList.toggle("white-theme");
+          if(document.body.classList.contains("white-theme")){
+              icon.src = "moon.png";
+          }else{
+              icon.src = "sun.png";
+          }
+          
+          if(document.body.classList.contains("white-theme")){
+            burg.src = "menuberg.png";
+          }else{
+            burg.src = "burgermenu.jpg";
+          }
+        }
+  
+      </script>
 </body>
 </html>
