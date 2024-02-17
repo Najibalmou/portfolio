@@ -81,6 +81,122 @@ body{
 
 
 
+
+.faqs-container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .faq {
+    background-color: transparent;
+    border: 1px solid #9FA4A8;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    transition: 0.3s ease;
+    width: 700px;
+  }
+  
+  .faq.active {
+    background-color: #044c69;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  .faq.active::after, .faq.active::before {
+    color: #2ecc71;
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+  }
+  
+  .faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+  }
+  
+  .faq-title {
+    margin: 0 35px 0 0;
+    color: var(--primary-color);
+  }
+  .infoss{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .faq-text {
+    display: none;
+    margin: 30px 0 0;
+  }
+  
+  .faq.active .faq-text {
+    display: block;
+  }
+  
+  .faq-toggle {
+    background-color: #00abf0;
+    border: none;
+    border-radius: 50%;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .faq-toggle:focus {
+    outline: none;
+  }
+  
+  .faq.active .faq-toggle {
+    background-color: #9FA4A8;
+  }
+  
+  .faq-toggle .fa-times {
+    display: none;
+  }
+  
+  .faq.active .faq-toggle .fa-times {
+    display: block;
+  }
+  
+  .faq-toggle .fa-chevron-down {
+    color: #83888E;
+  }
+  
+  .faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+  }
+  
+ 
+  
+  
+  
+
+
+
+
+
+
+
+
+
 .header{
     position: fixed;
     top: 0;
@@ -568,6 +684,22 @@ img {
     font-weight: 600;
 }
 
+.showmoore{
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 7px;
+    font-weight: 600;
+    background: #00abf0;
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 90px;
+}
+.showmoore:hover{
+    color: #00abf0;
+    background: var(--primary-color);
+}
+
 
 #cursor{
     position: relative;
@@ -660,11 +792,66 @@ img {
 #txt5{
     display: none;
 }
-
-
 .dm{
     color: var(--primary-color);
 }
+
+.scroll-tray {
+    white-space: nowrap;
+}
+.scroll-tray div {
+    display: inline-block;
+}
+
+.scroll-tray img {
+    border-radius: 0.3rem;
+    margin: 7px 135px;
+    padding: 0;
+    width: 100px;
+}
+
+.scroll{
+    width: 20px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: #00abf0;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    display: none;
+}
+.scroll-holder {
+    overflow-x: hidden;
+}
+
+.scroll-holder .scroll-tray:first-child {
+    animation: scroll-tray-hero 600s linear infinite;
+}
+
+.scroll-holder .scroll-tray:last-child {
+    animation: scroll-tray-hero 140s linear infinite;
+}
+
+@keyframes scroll-tray-hero {
+    0% {
+      transform: translateX(0);
+    }
+
+    99.99% {
+      transform: translateX(-7098px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+}
+
+
+
+
+
 
 
 
@@ -674,11 +861,26 @@ img {
     .skillsss{
         width: 80px;
     }
+    .faq {
+        background-color: transparent;
+        border: 1px solid #9FA4A8;
+        border-radius: 10px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px 0;
+        transition: 0.3s ease;
+        width: 400px;
+        margin-left: 5px;
+      }
     .cntct1{
         color: #57b2d6;
         display: inline-block;
         width: 100%;
         padding-top: 20px;
+    }
+    .showmoore{
+        display: none;
     }
     #hiddenName{
         display: block;
@@ -740,6 +942,7 @@ img {
     }
     .showSkills{
         display: block;
+        margin-bottom: 40px;
     }
     .sec4{
         display: none;
