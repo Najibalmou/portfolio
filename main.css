@@ -848,9 +848,19 @@ img {
     }
 }
 
-
-
-
+table , th , td , tr{
+    padding-right: 135px;
+}
+.itsme{
+    width: 350px;
+    margin-left: 50px;
+    border: 1px solid #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+    border-radius: 50%;
+}
+.faqqqqqq{
+    display: none;
+}
 
 
 
@@ -860,6 +870,21 @@ img {
     /* Adjustments for smaller screens */
     .skillsss{
         width: 80px;
+    }
+    .faqqqqqq{
+        display: block;
+    }
+    .itsmee{
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+        border: 1px solid #00abf0;
+        box-shadow: 0 0 10px #00abf0;
+        border-radius: 50%;
+    }
+    .faqqq{
+        display: none;
     }
     .faq {
         background-color: transparent;
