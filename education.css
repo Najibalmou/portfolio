@@ -94,7 +94,7 @@ body{
     box-shadow: 0 0 10px #4fb1d7;
     padding: 20px;
     border-radius: 20px;
-    background: linear-gradient(to left , #267ea0,#000);
+    background: linear-gradient(to left , #267ea0,var(--secondary-color));
     transition: 0.4s;
     cursor: pointer;
 }
@@ -108,7 +108,7 @@ body{
     box-shadow: 0 0 10px #4fb1d7;
     padding: 20px;
     border-radius: 20px;
-    background: linear-gradient(to left , #000,#267ea0);
+    background: linear-gradient(to left , var(--secondary-color),#267ea0);
     margin-left: 20px;
     transition: 0.4s;
     cursor: pointer;
@@ -116,8 +116,15 @@ body{
 .webdevv:hover{
     transform: scale(1.04);
 }
+hr{
+    background: var(--primary-color);
+}
+span{
+    color: var(--primary-color);
+}
 td{
     padding-top: 30px;
+    color: var(--primary-color);
 }
 .home{
     margin-top: 100px;
