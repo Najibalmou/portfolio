@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
@@ -49,31 +50,70 @@
 
     <header class="header">
         <img src="burgermenu.jpg" alt="burger_menu" width="60px" class="toggle-navbar-btn" id="iconburg">
-        <a href="#" class="logo">Najib.</a>
+        <img src="sun.png" id="icon">
 
         <nav class="navbar" id="navbaar">
             <a href="index.html" class="active" >Home</a>
             <a href="#sec2">About</a>
-            <a href="#">Education</a>
+            <a href="education.html">Education</a>
             <a href="#">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 <br><br><br><br><br><br><br>
 <center>
-    <div>
-        <h1 class="Malearning"><i>My learning</i></h1><br>
-        <h3>I have studied HTML , CSS (Tailwind, Bootstrap), JS (jQuery) , Algotithme and <span class="py">Python (+OOP)</span></h3><br>
-        <h4> * &nbsp; I learned in python :</h4><br>
-        <h4>- Functions
-            - Lits
-            - Arays ... </h4><br>
-            <h2>Librarys of python : </h2><br>
-            <h4>* &nbsp; Tkinter & Flask</h4>
-    </div>
+    <section class="sec1">
+<div class="webdev">
+    <div><h1><i class='bx bx-code-alt' style='color:#00abf0'> </i><span> Web Dev</span></h1></div>
+    <hr>
+    <br><br>
+    <table>
+        <tr><td>- &nbsp;HTML and CSS Web Development</td></tr>
+        <tr><td>- &nbsp;Tailwind & Bootstrap CSS Implementation</td></tr>
+        <tr><td>- &nbsp;JavaScript Development with a focus on modern frameworks</td></tr>
+    </table>
+</div>
 
+
+<div class="webdevv">
+    <div><h1><i class='bx bxs-edit' style='color:#00abf0'></i><span> UI/UX Design</span></h1></div>
+    <hr>
+    <br><br>
+    <table>
+        <tr><td>- &nbsp;Modern and Interactive Website Design</td></tr>
+        <tr><td>- &nbsp;Responsive Web Design</td></tr>
+        <tr><td>- &nbsp;User Interface (UI) Design Principles</td></tr>
+    </table>
+</div>
+</section>
 </center>
 
+
     <script src="mian.js"></script>
+
+
+
+
+
+    <script>
+        var icon = document.getElementById("icon");
+        var burg = document.getElementById("iconburg");
+  
+        icon.onclick = function(){
+          document.body.classList.toggle("white-theme");
+          if(document.body.classList.contains("white-theme")){
+              icon.src = "moon.png";
+          }else{
+              icon.src = "sun.png";
+          }
+          
+          if(document.body.classList.contains("white-theme")){
+            burg.src = "menuberg.png";
+          }else{
+            burg.src = "burgermenu.jpg";
+          }
+        }
+  
+      </script>
 </body>
 </html>
