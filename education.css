@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #081b29;
+    background: var(--secondary-color);
     color: #ededed;
 }
 .header{
@@ -31,7 +31,7 @@ body{
 
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -83,7 +83,42 @@ body{
     width: 345px;
     height: 50px;
 }
-
+.sec1{
+    display: flex;
+    justify-content: center;
+}
+.webdev{
+    width: 600px;
+    height: 350px;
+    border: 1px solid #00abf0;
+    box-shadow: 0 0 10px #4fb1d7;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to left , #267ea0,#000);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.webdev:hover{
+    transform: scale(1.04);
+}
+.webdevv{
+    width: 600px;
+    height: 350px;
+    border: 1px solid #00abf0;
+    box-shadow: 0 0 10px #4fb1d7;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to left , #000,#267ea0);
+    margin-left: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.webdevv:hover{
+    transform: scale(1.04);
+}
+td{
+    padding-top: 30px;
+}
 .home{
     margin-top: 100px;
 }
@@ -97,7 +132,7 @@ body{
 }
 
 body {
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 ::selection {
@@ -110,14 +145,34 @@ body {
 .Malearning{
     filter: drop-shadow(0 0 10px #00abf0);
 }
+#icon{
+    width: 50px;
+    cursor: pointer;
+}
 
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color: #081b29; 
+}
+
+
+.white-theme{
+    --primary-color:#081b29;
+    --secondary-color: #edf2fc;
+}
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     .header {
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(#00abf0,#081b29);
+        background: var(--secondary-color);
+    }
+    .webdev{
+        height: 500px;
+    }
+    .webdevv{
+        height: 500px;
     }
     .logo {
         margin-bottom: 15px; 
