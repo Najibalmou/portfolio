@@ -64,7 +64,7 @@
 <center>
     <section class="sec1">
 <div class="webdev">
-    <div><h1><i class='bx bx-code-alt' style='color:#00abf0'> </i><span> Web Dev</span></h1></div>
+    <div><h1><i class='bx bx-code-alt' style='color:#00abf0' id="edit"></i><span> Web Dev</span></h1></div>
     <hr>
     <br><br>
     <table>
@@ -76,7 +76,7 @@
 
 
 <div class="webdevv">
-    <div><h1><i class='bx bxs-edit' style='color:#00abf0'></i><span> UI/UX Design</span></h1></div>
+    <div><h1><i class='bx bxs-edit' style='color:#00abf0' id="editt"></i><span> UI/UX Design</span></h1></div>
     <hr>
     <br><br>
     <table>
@@ -98,6 +98,8 @@
     <script>
         var icon = document.getElementById("icon");
         var burg = document.getElementById("iconburg");
+        var boxicon = document.getElementById("edit");
+        var boxicon2 = document.getElementById("editt");
   
         icon.onclick = function(){
           document.body.classList.toggle("white-theme");
@@ -111,6 +113,18 @@
             burg.src = "menuberg.png";
           }else{
             burg.src = "burgermenu.jpg";
+          }
+
+          if(document.body.classList.contains("white-theme")){
+            boxicon.style = "color:#000";
+          }else{
+            boxicon.style = "color:#00abf0";
+          }
+
+          if(document.body.classList.contains("white-theme")){
+            boxicon2.style = "color:#000";
+          }else{
+            boxicon2.style = "color:#00abf0";
           }
         }
   
