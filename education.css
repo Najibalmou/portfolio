@@ -170,9 +170,11 @@ body {
     }
     .webdev{
         height: 500px;
+        margin-left: 10px;
     }
     .webdevv{
         height: 500px;
+        margin-right: 10px;
     }
     .logo {
         margin-bottom: 15px; 
