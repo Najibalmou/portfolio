@@ -98,12 +98,12 @@
 <img src="undraw_static_assets_rpm6.svg" class="image" id="hiddenImg">
 
     </section>
-
+<center>
     <section class="sec2" id="sec2">
         <div class="div2">
            <center><h1 class="about" id="aboutme">About Me</h1>
            <h3 class="descc">I'm a student in ISTA ZENETA AIN HARROUDA , skilled in HTML , CSS ( + Tailwind & Bootstrap) & Javascript ( + jQuery)</h3>
-           <i class='bx bxs-x-circle' style='color:#fff8f8'></i> <span class="experience">No experience yet</span>
+           <i class='bx bxs-x-circle' style='color:#fff8f8' id="xicon"></i> <span class="experience">No experience yet</span>
            <div class="circlepic">
             <img src="me.jpeg" alt="myphoto" width="130px" style="border-radius: 50%; ">
            </div>
@@ -141,10 +141,10 @@
            <img src="certificateskills.svg" alt="coding-pic" width="150px" id="codingpic" class="codingpic"><br>
            <button id="showCertificate" class="showCertificate"><span id="showandhide">Show Certificates </span><i class='bx bx-log-in-circle' style='color:#fff'></i></button>
 <br>
+</center>
 
 
-
-           <div>
+           <div><center>
             <section class="sec4" id="TheCertificates">
             <div class="gallery">
                 <a target="_blank" href="certificat courst javascript.jpeg">
@@ -188,18 +188,16 @@
                 <div class="desc">Certification Great learning HTML</div>
               </div>
               <br><br><br><br><br><br><br><br><br><br><br>
-              
+            <center> 
               <div>
                 <a href="education.html" class="showmoore">Show more =></a>
               </div>
-</section>
+</section></center> 
            </div>
-      </center>
     </section>
+  </center>
     <br><br>
-<center>
-    
-    </center>
+
     <center>
 <h1 class="skills" id="skills">Skills</h1><br>
 <img src="codingsb.svg" alt="skills-img" width="150px" class="certttimg">
@@ -815,7 +813,7 @@
 </center>
 
 <!-- for computer -->
-
+<center>
 <section class="faqqq">
 <table>
   <tr>
@@ -876,7 +874,7 @@
       </div></td>
   </tr>
 </table>
-</section>
+</section></center>
 
 <!-- for small appareils -->
 <section class="faqqqqqq">
@@ -1023,6 +1021,7 @@
     <script>
       var icon = document.getElementById("icon");
       var burg = document.getElementById("iconburg");
+      var xicon = document.getElementById("xicon");
 
       icon.onclick = function(){
         document.body.classList.toggle("white-theme");
@@ -1036,6 +1035,12 @@
           burg.src = "menuberg.png";
         }else{
           burg.src = "burgermenu.jpg";
+        }
+
+        if(document.body.classList.contains("white-theme")){
+          xicon.style = "color:#00abf0";
+        }else{
+          xicon.style = "color:#fff";
         }
       }
 
