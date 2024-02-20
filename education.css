@@ -87,6 +87,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.Services{
+    text-align: center;
+}
+
 .webdev{
     width: 600px;
     height: 350px;
