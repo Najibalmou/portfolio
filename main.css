@@ -513,8 +513,8 @@ div.gallery {
 
 .sec3{
     display: flex;
-    margin-right: 110px;
-    margin-left: 150px;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 .namee{
     text-align: center;
@@ -1097,11 +1097,12 @@ table , th , td , tr{
 
 
     .sec3 {
+        display: flex;
+        justify-content: center;
         flex-direction: column; /* Empile les éléments les uns sur les autres */
         align-items: center; /* Centre les éléments horizontalement */
     }
     .proj {
-        margin-left: 30px;
         margin-bottom: 20px;
         width: auto;
         height: auto;
