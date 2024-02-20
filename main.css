@@ -1101,8 +1101,7 @@ table , th , td , tr{
         align-items: center; /* Centre les éléments horizontalement */
     }
     .proj {
-        margin-right: 30px;
-        margin-left: 0;
+        margin-left: 30px;
         margin-bottom: 20px;
         width: auto;
         height: auto;
