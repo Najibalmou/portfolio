@@ -84,11 +84,10 @@
             <h1 class="myname" id="hiddenName">Hi, I'm Najib Almoubaraki</h1>
             <h3 id="hiddentext1">Front-end Developer</h3>
            <p id="hiddentext2" class="dess"> Front-end developer skilled in HTML, CSS, and JavaScript. I bring concepts to life with precision and focus on creating visually appealing and user-friendly interfaces. Committed to staying current with industry trends for effective digital solutions.</p>
-           <center>
            <div class="btn-box" id="hiddenBtns">
             <a href="CV-Najib.pdf" download="Najib-CV"> Download CV </a>
             <a href="https://wa.me/0601978547" target="_blank" >Let's Talk</a>
-           </div></center>
+           </div>
            <div class="home-sci" id="hiddenicons">
             <div class="centred-icons">
               <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -996,7 +995,7 @@
   </div>
 </footer>
     
-
+<img src="menuberg.png" class="img3" id="img3">
 
 
 <script>
@@ -1040,6 +1039,7 @@
           burg.src = "burgermenu.jpg";
         }
 
+
         if(document.body.classList.contains("white-theme")){
           xicon.style = "color:#000";
         }else{
@@ -1047,6 +1047,36 @@
         }
       }
 
+
+
+      
+
+//       $(document).ready(function(){
+//     $("#iconburg").click(function(){
+//         var currentSrc = $(this).attr('src');
+//         var newSrc = currentSrc == 'burgermenu.jpg' ? 'whitex.png' : 'burgermenu.jpg';
+//         $(this).attr('src', newSrc);
+//     });
+// });
+
+
+// if(document.body.classList.contains("white-theme")){
+//   $(document).ready(function(){
+//     $("#img3").click(function(){
+//         var currentSrc2 = $(this).attr('src');
+//         var newSrc2 = currentSrc2 == 'menuberg.png' ? 'blackx.png' : 'menuberg.png';
+//         $(this).attr('src', newSrc2);
+//     });
+// });
+// }
+      
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Come back !";
+})
+window.addEventListener("focus", () => {
+    document.title = docTitle ;
+})
     </script>
 
 </body>
