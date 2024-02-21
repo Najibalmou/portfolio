@@ -440,6 +440,9 @@ body{
 }
 .sec4{
     display: block;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
     margin-left: 110px;
 }
 .showCertificate{
@@ -691,7 +694,6 @@ img {
     color: var(--primary-color);
     cursor: pointer;
     text-decoration: none;
-    margin-right: 90px;
 }
 .showmoore:hover{
     color: #00abf0;
@@ -976,6 +978,7 @@ table , th , td , tr{
     }
     .sec4{
         display: none;
+        margin-right: 110px;
     }
     .footer{
         margin-top: 30px;
