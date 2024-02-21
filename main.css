@@ -80,7 +80,7 @@ body{
 }
 
 
-
+.img3{display: none;}
 
 .faqs-container {
     margin: 0 auto;
@@ -269,7 +269,6 @@ body{
     z-index: 1;
     overflow: hidden;
     transition: .5s;
-    margin-right: 10px;
 }
 
 .btn-box a:hover {
@@ -870,6 +869,13 @@ table , th , td , tr{
     .skillsss{
         width: 80px;
     }
+    .btn-box{
+        margin-left: 10px;
+    }
+    .btn-box a{
+        margin-left: 10px;
+    }
+    .img3{display: none;}
     .faqqqqqq{
         display: block;
     }
