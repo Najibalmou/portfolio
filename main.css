@@ -106,7 +106,7 @@ body{
   
   .faq.active::after, .faq.active::before {
     color: #2ecc71;
-    content: '\f075';
+    content: '';
     font-family: 'Font Awesome 5 Free';
     font-size: 7rem;
     position: absolute;
@@ -183,19 +183,6 @@ body{
   .faq.active .faq-toggle .fa-chevron-down {
     display: none;
   }
-  
- 
-  
-  
-  
-
-
-
-
-
-
-
-
 
 .header{
     position: fixed;
@@ -216,8 +203,6 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
-
-
 
 .home{
     height: 100vh;
@@ -420,6 +405,7 @@ body{
     background: #028cc3; 
   }
   
+  
 .about{
     color: #00abf0;
     margin-bottom: 5px;
@@ -606,11 +592,28 @@ div.gallery {
     background: #044c69;
     width: 100%;
 }
+
+.Embassador{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline var(--primary-color);
+    text-underline-offset: 0.4em;
+    text-decoration-thickness: 0.1em;
+}
+
+.active:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline var(--primary-color);
+    text-underline-offset: 0.4em;
+    text-decoration-thickness: 0.1em;
+} 
+
 .experience{
     color: var(--primary-color);
 }
 img {
-    position: relative; /* Assurez-vous que les superpositions fonctionnent correctement */
+    position: relative;
 }
 
 .sec7 {
@@ -620,6 +623,7 @@ img {
 }
 .descc{
     color: var(--primary-color);
+    margin: 8px;
 }
 .sec7{
     border: 2px solid #00abf0;
@@ -631,6 +635,32 @@ img {
 .sec7 div {
     margin-right: 20px;
 }
+.inputBox {
+    position: relative;
+}
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--secondary-color);
+    transition: 0.5s;
+    font-weight: 600;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #00abf0;
+    transform: translateX(10px) translateY(-7px); 
+    font-size: 0.77em;
+    font-weight: 600;
+    padding: 0 10px;
+    background: #081b29;
+    border-left: 3px solid #00abf0;
+    border-right: 2px solid #00abf0;
+    letter-spacing: 0.2em;
+}
+
 .contactme{
     background: #00abf0;
     color: var(--primary-color);
@@ -660,6 +690,7 @@ img {
     border-radius: 10px;
     border: 1px solid #081b29;
     margin-top: 7px;
+    outline: none;
 }
 .inpu{
     width: 400px;
@@ -672,6 +703,7 @@ img {
     margin-bottom: 30px;
     border-radius: 10px;
     border: 1px solid #081b29;
+    outline: none;
 }
 .inp:focus {
     box-shadow: 0 0 50px #00abf0;
@@ -973,7 +1005,7 @@ table , th , td , tr{
         display: block;
     }
     .showSkills{
-        display: block;
+        display: none;
         margin-bottom: 40px;
     }
     .sec4{
