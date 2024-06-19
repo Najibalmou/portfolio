@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="x-icon" href="Najiblogo.png">
   <link rel="stylesheet" href="main.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +74,7 @@
       <span style="--i:18;"></span>
     </div>
     <nav class="navbar" id="navbaar">
-      <a href="index.html" class="active" id="txt1">Home</a>
+      <a href="#HomeSection" class="active" id="txt1">Home</a>
       <a href="#sec2" id="txt2">About</a>
       <a href="https://www.linkedin.com/in/najib-almoubaraki/" target="_blank" id="txt3">Certificates</a>
       <a href="#sec6" id="txt4">Skills</a>
@@ -80,7 +82,7 @@
     </nav>
   </header>
 
-  <section class="home">
+  <section class="home" id="HomeSection">
     <div class="home-content">
       <h1 class="myname" id="hiddenName">Hi, I'm Najib Almoubaraki</h1>
       <h3 id="hiddentext1">Full-Stack Developer</h3>
@@ -1153,9 +1155,9 @@
       </div>
 
       <div class="container">
-        <form method="post" action="connect.php">
+        <form method="post" action="createmsg.php">
           <div class="inputBox">
-            <input type="text" name="username" class="inp" required>
+            <input type="text" name="name" class="inp" required>
             <span>Name</span>
           </div>
 
@@ -1223,7 +1225,7 @@
     // checkCookie != 1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");
 
   </script>
-  <script src="mian.js"></script>
+  <script src="mian.js" defer></script>
 
 
 
@@ -1292,6 +1294,48 @@
       document.title = docTitle;
     })
   </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const faqs = document.querySelectorAll('.td2');
+    const MyimgCartoon = document.querySelectorAll('.td1');
+    const Projects = document.querySelectorAll('.sec3');
+
+
+    for (let i = 0; i < Projects.length; i++) {
+      gsap.fromTo(Projects[i],
+        { y: 80, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.5, scrollTrigger: { trigger: Projects[i], start: 'top center' } }
+      );
+    }
+
+    for (let i = 0; i < faqs.length; i++) {
+      gsap.fromTo(faqs[i],
+        { x: 80, opacity: 0 },
+        { x: 0, opacity: 1, duration: 1.5, scrollTrigger: { trigger: faqs[i], start: 'top center' } }
+      );
+    }
+
+    for (let i = 0; i < MyimgCartoon.length; i++) {
+      gsap.fromTo(MyimgCartoon[i],
+        { x: -80, opacity: 0 },
+        { x: 0, opacity: 1, duration: 1.5, scrollTrigger: { trigger: faqs[i], start: 'top center' } }
+      );
+    }
+
+
+
+
+  </script>
+
+
+
+
+
 
 </body>
 
