@@ -45,66 +45,40 @@ scrollBtn.onclick = function () {
 }
 
 
-function showHiddenTxt1() {
-    $("#txt1").fadeIn(3000);
-}
-setTimeout(showHiddenTxt1, 2000);
-
-function showHiddenTxt2() {
-    $("#txt2").fadeIn(3000);
-}
-setTimeout(showHiddenTxt2, 3000);
-
-function showHiddenTxt3() {
-    $("#txt3").fadeIn(3000);
-}
-setTimeout(showHiddenTxt3, 4000);
-
-function showHiddenTxt4() {
-    $("#txt4").fadeIn(3000);
-}
-setTimeout(showHiddenTxt4, 5000);
-
-function showHiddenTxt5() {
-    $("#txt5").fadeIn(3000);
-}
-setTimeout(showHiddenTxt5, 6000);
-
-
 function showHiddenText() {
     $("#hiddenName").fadeIn(3000);
 }
-setTimeout(showHiddenText, 7000);
+setTimeout(showHiddenText, 1000);
 
 function showHiddenText1() {
     $("#hiddentext1").fadeIn(3000);
 }
-setTimeout(showHiddenText1, 8000);
+setTimeout(showHiddenText1, 2000);
 
 function showHiddenText2() {
     $("#hiddentext2").fadeIn(3000);
 }
-setTimeout(showHiddenText2, 9000);
+setTimeout(showHiddenText2, 3000);
 
 function showHiddenBtn1() {
     $("#hiddenBtns").fadeIn(3000);
 }
-setTimeout(showHiddenBtn1, 10000);
+setTimeout(showHiddenBtn1, 4000);
 
 function showHiddenIcons() {
     $("#hiddenicons").fadeIn(3000);
 }
-setTimeout(showHiddenIcons, 11000);
+setTimeout(showHiddenIcons, 5000);
 
 function showHiddenImg() {
     $("#hiddenImg").fadeIn(3000);
 }
-setTimeout(showHiddenImg, 12000);
+setTimeout(showHiddenImg, 6000);
 
 function showHiddenAboutme() {
     $("#aboutme").fadeIn(3000);
 }
-setTimeout(showHiddenAboutme, 13000);
+setTimeout(showHiddenAboutme, 7000);
 
 
 
@@ -176,8 +150,3 @@ close_btn.addEventListener('click', () => {
 //         {y: 0, opacity: 1, duration: 1.5, scrollTrigger: {trigger: faqs[i], start: 'top center'}}
 //     );
 // }
-
-
-
-
-
