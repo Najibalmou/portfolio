@@ -832,57 +832,7 @@ img {
     color: var(--primary-color);
 }
 
-.scroll-tray {
-    white-space: nowrap;
-}
-.scroll-tray div {
-    display: inline-block;
-}
 
-.scroll-tray img {
-    border-radius: 0.3rem;
-    margin: 7px 135px;
-    padding: 0;
-    width: 100px;
-}
-
-.scroll{
-    width: 20px;
-    border: none;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    background: #00abf0;
-    cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    display: none;
-}
-.scroll-holder {
-    overflow-x: hidden;
-}
-
-.scroll-holder .scroll-tray:first-child {
-    animation: scroll-tray-hero 600s linear infinite;
-}
-
-.scroll-holder .scroll-tray:last-child {
-    animation: scroll-tray-hero 140s linear infinite;
-}
-
-@keyframes scroll-tray-hero {
-    0% {
-      transform: translateX(0);
-    }
-
-    99.99% {
-      transform: translateX(-7098px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-}
 
 table , th , td , tr{
     padding-right: 135px;
@@ -898,7 +848,53 @@ table , th , td , tr{
     display: none;
 }
 
+.sec9 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+.scroll-holder {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-tray {
+    display: flex;
+    animation: scroll linear infinite;
+}
+
+.scroll-tray div {
+    flex: 0 0 auto;
+    padding: 0 100px;
+}
+
+.scroll-tray img {
+    height: 80px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-4500%);
+    }
+}
+
+.scroll{
+    width: 20px;
+    border: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: #00abf0;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    display: none;
+}
 
 
   /* Media Query for Small Screens */
