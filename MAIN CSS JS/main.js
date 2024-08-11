@@ -82,30 +82,7 @@ setTimeout(showHiddenAboutme, 7000);
 
 
 
-$(document).ready(function () {
-    $(".contactme").click(function () {
-        // Vérifie si tous les champs d'entrée sont vides
-        var inputsAreEmpty = true;
-        $("input").each(function () {
-            if ($(this).val() !== "") {
-                inputsAreEmpty = false;
-                return false;
-            }
-        });
 
-        if (inputsAreEmpty) {
-            $("#success-message").text("Enter your Informations !");
-        } else {
-
-            $("#success-message").text("");
-            $("input").val("");
-
-            setTimeout(function () {
-                $("#success-message").text("Message sent Successfully !");
-            }, 1500);
-        }
-    });
-});
 
 
 var cursor = document.getElementById('cursor');
@@ -150,3 +127,8 @@ close_btn.addEventListener('click', () => {
 //         {y: 0, opacity: 1, duration: 1.5, scrollTrigger: {trigger: faqs[i], start: 'top center'}}
 //     );
 // }
+
+
+
+
+
