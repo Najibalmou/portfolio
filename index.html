@@ -379,23 +379,22 @@
       </div>
 
       <div class="container">
-        <form method="post" action="createmsg.php">
+        <form action="https://formsubmit.co/29e15e4274a38548835fdb9064530d91" method="POST">
           <div class="inputBox">
-            <input type="text" name="name" class="inp" required>
-            <span>Name</span>
+            <input type="text" name="name" class="inp" required placeholder="Name">
           </div>
 
           <div class="inputBox">
-            <input type="email" name="email" class="inp" required>
-            <span>E-mail</span>
+            <input type="email" name="email" class="inp" required placeholder="Email">
           </div>
 
           <div class="inputBox">
-            <input type="text" name="message" class="inpu" required>
-            <span>Message me</span>
+            <input type="text" name="message" class="inpu" required placeholder="Message">
           </div>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
 
-          <input type="submit" class="contactme" value="Send Message">
+          <button type="submit" class="contactme">SEND</button>
         </form>
       </div>
 
