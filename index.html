@@ -411,10 +411,17 @@
       <div>
         <h1 class="cntct1">Contact Me</h1>
         <div>
-          <input type="text" placeholder="&nbsp;&nbsp;Name" class="inp"><br>
-          <input type="text" placeholder="&nbsp;&nbsp;E-mail" class="inp"><br>
-          <input type="text" placeholder="&nbsp;&nbsp;Message Me" class="inpu"><br>
-          <button class="contactme">Send Message</button>
+          <form action="https://formsubmit.co/29e15e4274a38548835fdb9064530d91" method="POST">
+            <input type="text" name="name" placeholder="&nbsp;&nbsp;Name" class="inp" required><br>
+            <input type="email" name="email" placeholder="&nbsp;&nbsp;E-mail" class="inp" required><br>
+            <input type="text" name="message" placeholder="&nbsp;&nbsp;Message Me" class="inpu" required><br>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://najibalmou.github.io/portfolio/">
+
+            <button class="contactme">Send Message</button>
+          </form>
         </div>
       </div>
       </div>
