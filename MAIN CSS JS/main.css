@@ -581,9 +581,6 @@ div.gallery {
     display: none;
 }
 
-.sec5{
-    display: none;
-}
 .certttimg{
     display: none;
 }
@@ -982,10 +979,7 @@ table , th , td , tr{
     .certttimg{
         display: block;
     }
-    .sec5{
-        display: none;
-        margin-left: 10px;
-    }
+
     .codingpic{
         display: block;
     }
@@ -1008,10 +1002,6 @@ table , th , td , tr{
         display: none;
     } 
 
-    .sec5{
-        margin-left: 65px;
-        justify-content: center;
-    }
     
     div.skil {
         margin-right: 20px;
